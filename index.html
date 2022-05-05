@@ -1,35 +1,55 @@
-<html>
-  <head>
-    <title>Mensah David Assigbi - Github.io</title>
-  </head>
-  <body>
-    <style>
-      body {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-          font-family: sans-serif;
-          font-size: xxx-large;
-          color: #e8e8e8;
-      }
-      p {
-        border: 2px solid gray;
-        background-color: gray;
-        border-radius: .2rem;
-        padding: 0.2rem 0.5rem;
-        box-shadow: 0.2rem 0.2rem 2rem 0.5rem #afabab;
-        animation-name: breath;
-        animation-iteration-count: infinite;
-        animation-duration: 1.8s;
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes breath {
-        50%  {box-shadow: 0.2rem 0.2rem 3rem 2rem #afabab;}
-      }
-    </style>
-    <p>Currently under construction</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fff6b11c7b.js" crossorigin="anonymous"></script>
+    <title>David Assigbi's portfolio</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <!-- user story 6 -->
+        <div>MDA</div>
+        <div id="links">
+            <a class="nav-link" href="#welcome-section">About</a> <!-- user story 7 -->
+            <a class="nav-link" href="#projects">Work</a> <!-- user story 7 -->
+            <a class="nav-link" href="#contact">Contact</a> <!-- user story 7 -->
+        </div>
+    </nav>
+
+    <div class="content-wrap"></div><!-- Account for the top fixed header height -->
+
+    <section id="welcome-section">
+        <!-- user story 1 -->
+        <h1>Hi, I am David Assigbi</h1> <!-- user story 2 -->
+        <span>a CS Student, sysadmin, web developper, 3D enthusiast and an aspiring network data analyst</span>
+    </section>
+
+    <section id="projects">
+        <!-- user story 3 -->
+        <h2>These are some of my projects</h2>
+        <div id="project-cards"></div><!-- JS rendered -->
+        <a id="show-all" class="show-all" target="_blank" href="https://codepen.io/davidassigbi/pens/public">Show all</a>
+    </section>
+
+    <footer id="contact">
+        <p id="work-invitation">Let's work together...</p>
+        <span id="coffee-statement">How do you take your coffee ?</span>
+        <div id="social-links"></div><!-- JS rendered -->
+    </footer>
+
+    <div class="red-band"></div>
+
+    <div id="disclaimer">
+        <p>**Proudly made by Me :)</p>
+        <p>&copy; Being taught @ freeCodeCamp</p>
+    </div>
+
+    <script src="index.js"></script>
+    <!--script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+</body>
 </html>
